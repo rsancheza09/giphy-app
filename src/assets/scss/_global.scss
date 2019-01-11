@@ -1,0 +1,21 @@
+html,
+body {
+  color: white;
+  background-color: $mineShaft;
+  font-size: 10px;
+}
+
+.input-group-lg>.form-control:not(textarea) {
+  height: calc(5rem + 2px);
+  margin-bottom: 1rem;
+}
+
+.btn {
+  background-color: $deYork;
+  border-color: white;
+
+  &:hover {
+    background-color: $froly;
+    border-color: white;
+  }
+}

@@ -1,0 +1,12 @@
+.search {
+  .btn {
+    margin-bottom: 1rem;
+  }
+  .fa-search {
+    width: 3rem;
+    font-size: 2rem;
+  }
+  &-field.form-control {
+    font-size: 1.6rem;
+  }
+}

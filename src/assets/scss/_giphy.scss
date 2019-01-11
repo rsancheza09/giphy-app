@@ -1,0 +1,14 @@
+.giphy {
+  margin-bottom: 2rem;
+  .card-body {
+    background-color: $pictonBlue;
+  }
+  .card-title {
+    color: $mineShaft;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .btn {
+    font-size: 1.6rem;
+  }
+}
