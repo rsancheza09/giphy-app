@@ -44,8 +44,8 @@ We have provided this repo as a starting point so you can focus on code without 
 We only ask that you’re on the latest LTS version of node.js (this is reflected in the `.nvmrc` file). Then you can run:
 
 ```sh
-$ npm install
-$ npm start
+$ yarn install
+$ yarn start
 ```
 
 ## Seeking help
