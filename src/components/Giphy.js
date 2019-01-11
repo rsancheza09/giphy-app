@@ -6,7 +6,9 @@ import { faEye } from '@fortawesome/free-solid-svg-icons';
 
 const Giphy = (props) => (
   <Card className="giphy">
-    <CardImg top src={ props.imgUrl } alt={ props.title } />
+    <a href={ props.giphyUrl } target="_blank" rel="noopener noreferrer">
+      <CardImg top src={ props.imgUrl } alt={ props.title } />
+    </a>
     <CardBody>
       <CardTitle>{ props.title }</CardTitle>
       <Button
