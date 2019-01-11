@@ -1,8 +1,8 @@
 import { defineAction } from '../utils/defineActions';
 
-export const SEARCH = defineAction(
-  'SEARCH',
-  ['INIT', 'ERROR', 'SUCCESS', 'SELECT_TYPE', 'CLEAR']
+export const TRENDING = defineAction(
+  'TRENDING',
+  ['INIT', 'ERROR', 'SUCCESS']
 );
 
 /*

@@ -3,6 +3,8 @@ import * as ACTIONS from '../constants/search';
 const initialState = {
   loading: false,
   error: '',
+  searchType: 'gifs',
+  data: [],
 };
 
 function search(state = initialState, action) {
@@ -14,17 +16,17 @@ function search(state = initialState, action) {
       };
 
     case ACTIONS.SEARCH.ERROR:
+    case ACTIONS.SEARCH.SUCCESS:
+    case ACTIONS.SEARCH.SELECT_TYPE:
       return {
         ...state,
         ...action.payload,
-        loading: false,
       };
 
-    case ACTIONS.SEARCH.SUCCESS:
+    case ACTIONS.SEARCH.CLEAR:
       return {
         ...state,
-        ...action.payload,
-        loading: false,
+        ...initialState,
       };
 
     default:

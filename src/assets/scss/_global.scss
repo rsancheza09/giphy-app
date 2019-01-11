@@ -9,3 +9,13 @@ body {
   height: calc(5rem + 2px);
   margin-bottom: 1rem;
 }
+
+.btn {
+  background-color: $deYork;
+  border-color: white;
+
+  &:hover {
+    background-color: $froly;
+    border-color: white;
+  }
+}

@@ -18,10 +18,18 @@ class Search extends Component {
       searchInput: e.target.value,
     });
   }
+  clearInput() {
+    this.setState({
+      searchInput: '',
+    });
+  }
   onHandleSearchClick() {
     const { searchInput } = this.state;
     if (searchInput) {
       this.props.handleSearchClick(searchInput);
+      this.clearInput();
+    } else {
+      this.props.onError();
     }
   }
   render() {
@@ -48,6 +56,7 @@ class Search extends Component {
 
 Search.propTypes = {
   handleSearchClick: PropTypes.func.isRequired,
+  onError: PropTypes.func.isRequired,
 };
 
 export default Search;
